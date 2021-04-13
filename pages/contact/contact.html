@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Define el set de caractéres -->
+    <meta charset="UTF-8">
+    <!-- Palabras claves para los buscadores  -->
+    <meta name="keywords" content="Fullstack, HTML, CSS, Javascript, Bootstrap, React, MongoDB, NodeJS">
+    <!-- Descripción de la página web -->
+    <meta name="description" content="Fullstack developer description, stacks used in frontend and backend">
+    <!-- Autor de la página -->
+    <meta name="author" content="RollingCode">
+    <!-- configuración de vistas para que la página se vea bien en cualquier dispositivo
+         width=device-width: la anchura será la orinal del dispositivo
+         initial-scale=1.0 no se realizará zoom en la página
+         user-scalable=no el usuario no podrá hacer zoom
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <title>Contacto</title>
+</head>
+
+<body>
+    <a href="/index.html">Inicio</a>
+    <a href="/pages/404.html">404</a>
+    <h1>CONTACTO</h1>
+    <!-- Inicio de mi formulario -->
+    <form>
+        <!-- Título del formulario  -->
+        <h2>Elementos de un formulario</h2>
+        <p>
+            <label for="idName">Nombre</label> <br>
+            <input type="text" name="name" id="idName" placeholder="Ingrese el nombre">
+        </p>
+        <p>
+            <label for="idSurname">Apellido</label> <br>
+            <input type="text" name="surname" id="idSurname" value="Smith">
+        </p>
+        <p>
+            <label for="idPassword">Password</label> <br>
+            <input type="password" name="password" id="idPassword">
+        </p>
+        <p>
+            <label for="idAge">Edad</label> <br>
+            <input type="number" name="age" id="idAge" min="0" max="120">
+        </p>
+        <label for="">Mascotas favoritos</label> <br>
+        <input type="checkbox" value="cat" name="pet">Gato <br>
+        <input type="checkbox" value="dog" name="pet">Perro <br>
+        <input type="checkbox" value="bird" name="pet">Pájaros <br>
+
+        <label for="">Género</label> <br>
+        <input type="radio" value="male" name="gender">Hombre <br>
+        <input type="radio" value="female" name="gender">Mujer <br>
+        <input type="radio" value="other" name="gender">Otro <br>
+        <p>
+            <label for="">Calificacion</label>
+            <input type="range" min="1" max="100" name="calification" value="100">
+        </p>
+        <p>
+            <label for="">Selecciona el color</label>
+            <input type="color">
+        </p>
+
+        <textarea name="description" cols="30" rows="10"></textarea>
+
+        value
+        readonly
+        disabled
+        size: text, search, tel, url, email, and password.
+        maxlength
+        min
+        max number, range, date, datetime-local, month, time and week.
+        multiple: file, email
+        step: number interval
+        autofocus
+        list
+        autocomplete: ext, search, url, tel, email, password, datepickers, range, and color.
+
+        <fieldset>
+            <legend>Navegadores</legend>
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </fieldset>
+
+        <select name="pet" id="">
+            <option value="Cat">Gato</option>
+            <option value="Dog">Perro</option>
+            <option value="Bird">Pajaro</option>
+            <option value="Fish">Pez</option>
+        </select>
+
+    </form>
+</body>
+
+</html>
